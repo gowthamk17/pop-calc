@@ -27,17 +27,20 @@ body {
     border-radius: 8px 8px 0px 0px;
     padding: 8px;
     display: flex;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .undo_btn {
-    padding: 0px 12px;
+    padding: 6px 16px;
     font-weight: 600;
     background: inherit;
     border-radius: 4px;
     border: 2px solid rgb(95, 93, 93);
     color: rgb(228, 228, 228);
     cursor: pointer;
+    user-select: none;
 }
 
 .undo_btn:hover {
@@ -45,5 +48,101 @@ body {
 }
 
 .undo_btn:active {
+    background: rgb(40, 39, 39);
+}
+
+.calc_topbar_menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.calc_close {
+    height: 16px;
+    width: 16px;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+    background: rgb(210, 121, 12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.calc_close:hover {
+    background: rgb(99, 98, 98);
+}
+
+.calc_close:active {
+    background: rgb(40, 39, 39);
+}
+
+.calc-min {
+    height: 16px;
+    width: 16px;
+    font-size: 14px;
+    font-weight: 900;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.calc-min:hover {
+    background: rgb(99, 98, 98);
+}
+
+.calc-min:active {
+    background: rgb(40, 39, 39);
+}
+
+.calc_ham_box {
+    padding: 6px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 4px;
+    border: 2px solid rgb(95, 93, 93);
+    cursor: pointer;
+    user-select: none;
+}
+
+.calc_ham_box:hover {
+    background: rgb(99, 98, 98);
+}
+
+.calc_ham_box:active {
+    background: rgb(40, 39, 39);
+}
+
+.calc_ham {
+    width: 18px;
+    height: 2px;
+    background: rgb(228, 228, 228);;
+}
+
+.calc_type {
+    height: 30px;
+    padding: 4px 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 2px solid rgb(95, 93, 93);
+    color: rgb(228, 228, 228);
+    cursor: pointer;
+    user-select: none;
+}
+
+.calc_type:hover {
+    background: rgb(99, 98, 98);
+}
+
+.calc_type:active {
     background: rgb(40, 39, 39);
 }
