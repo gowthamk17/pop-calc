@@ -149,6 +149,7 @@ body {
 .calc_hist_container {
     height: 120px;
     background: rgb(35, 35, 35);
+    overflow-y: scroll;
 }
 
 .calc_display {
@@ -207,4 +208,14 @@ body {
     padding: 20px;
     color: rgb(220, 214, 214);
     font-size: 18px;
+}
+
+.calc_hist_box {
+    padding: 10px;
+    color: rgb(220, 214, 214);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(73, 73, 73);
 }
